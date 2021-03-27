@@ -1,0 +1,6 @@
+package com.zcy.springcloud.service;
+
+public class DeptClientServiceFallbackFactory 
+		implements FallbackFactory<DeptClientService>{
+
+}

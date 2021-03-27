@@ -1,0 +1,5 @@
+package com.zcy.springcloud;
+
+public class DeptConsumer_DashBoard_App {
+
+}

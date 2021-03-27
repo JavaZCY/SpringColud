@@ -1,0 +1,6 @@
+package com.zcy.springcloud.rest;
+
+
+public class ConfigClientRest {
+
+}

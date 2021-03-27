@@ -1,0 +1,10 @@
+package com.zcy.myRule;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MySelfRule {
+	public IRule myRule() {
+		
+	}
+}

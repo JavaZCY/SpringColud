@@ -1,0 +1,13 @@
+package com.zcy.springcloud.service;
+
+import feign.hystrix.FallbackFactory;
+
+public class DeptClientServiceFallbackFactory 
+		implements FallbackFactory<DeptClientService>{
+
+	@Override
+	public DeptClientService create(Throwable arg0) {
+		return null;
+	}
+
+}

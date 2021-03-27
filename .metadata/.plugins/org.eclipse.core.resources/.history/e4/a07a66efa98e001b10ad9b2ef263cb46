@@ -1,0 +1,29 @@
+packagecom.atguigu.springcloud.rest;
+
+
+importorg.springframework.beans.factory.annotation.Value;
+importorg.springframework.web.bind.annotation.RequestMapping;
+importorg.springframework.web.bind.annotation.RestController;
+
+
+@RestController
+publicclassConfigClientRest {
+
+
+@Value("${spring.application.name}")
+privateStringapplicationName;
+
+@Value("${eureka.client.service-url.defaultZone}")
+privateStringeurekaServers;
+
+@Value("${server.port}")
+privateStringport;
+
+@RequestMapping("/config")
+publicString getConfig()
+{
+Stringstr="applicationName: "+applicationName+"\t eurekaServers:"+eurekaServers+"\t port: "+port;
+System.out.println("******str: "+str);
+return"applicationName: "+applicationName+"\t eurekaServers:"+eurekaServers+"\t port: "+port;
+}
+}
